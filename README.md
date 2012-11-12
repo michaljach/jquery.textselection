@@ -11,6 +11,18 @@ Just copy jquery.textselection.js to Your server and include it and jQuery.
 
     	$('#element').textselection();
 
-- Select range
+- Select range (start, end)
 
 		$('#element').textselection('range',2,4);
+
+- Select first X characters
+
+		$('#element').textselection('range',2);
+
+- Clear all selection
+
+		$('#element').textselection('clear');
+
+#License
+
+[Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)](http://creativecommons.org/licenses/by-sa/3.0/)

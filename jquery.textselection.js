@@ -3,9 +3,8 @@
  * https://github.com/michaljach/jquery.textselection
  *
  * Copyright 2012, Michal Jach
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.opensource.org/licenses/GPL-2.0
+ * License Info:
+ * Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
  */
 
 (function($){

@@ -66,6 +66,18 @@
                 }
             }); 
         },
+        find : function(string, param1){
+            return this.each(function(){
+                if(typeof param1 == "undefined"){
+                    var start = $(this).prop('innerHTML').indexOf(string) + 1;
+                    var end = string.length;
+                    selectText(this, start, start+end-1);
+                }
+                else {
+                   // TO DO
+                }
+            });
+        },
         clear : function(){
             return this.each(function(){
                 selection = window.getSelection();

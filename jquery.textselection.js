@@ -66,15 +66,24 @@
                 }
             }); 
         },
-        find : function(string, param1){
+        find : function(substring, param1){
             return this.each(function(){
+                var string = $(this).prop('innerHTML');
+                var end = substring.length;
                 if(typeof param1 == "undefined"){
-                    var start = $(this).prop('innerHTML').indexOf(string) + 1;
-                    var end = string.length;
+                    var start = string.indexOf(substring) + 1;
                     selectText(this, start, start+end-1);
                 }
                 else {
-                   // TO DO !
+                    var pos = 0, num = -1, i = -1;
+                    while(pos != -1){
+                        pos = string.indexOf(substring, i + 1);
+                        num += 1;
+                        i = pos;
+                        if(num == param1-1){
+                            selectText(this, pos + 1, pos + end);
+                        }
+                    }
                 }
             });
         },

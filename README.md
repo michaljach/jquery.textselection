@@ -19,6 +19,14 @@ Just copy jquery.textselection.js to Your server and include it and jQuery.
 
 		$('#element').textselection('range',2);
 
+- Find first occurrence of substring
+
+        $('#element').textselection('find','substring');
+
+- Find specific occurrence of substring
+
+        $('#element').textselection('find','substring',2);
+
 - Clear all selection
 
 		$('#element').textselection('clear');
